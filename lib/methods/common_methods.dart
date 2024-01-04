@@ -23,4 +23,20 @@ class CommonMethods
       ),
     );
   }
+
+  Widget data(int dataFlexValue, Widget widget)
+  {
+    return Expanded(
+      flex: dataFlexValue,
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.grey),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: widget,
+        ),
+      ),
+    );
+  }
 }

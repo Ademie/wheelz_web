@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wheelz_web/methods/common_methods.dart';
+import 'package:wheelz_web/widgets/drivers_data_list.dart';
 
 class DriversPage extends StatefulWidget
 {
@@ -54,7 +55,7 @@ class _DriversPageState extends State<DriversPage>
               ),
 
               //display data
-
+              const DriversDataList(),
             ],
           ),
         ),
